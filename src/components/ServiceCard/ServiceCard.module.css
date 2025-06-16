@@ -1,0 +1,35 @@
+.serviceItem {
+    background-color: var(--blanco);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: var(--sombra-suave);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* La opacidad y transform iniciales están en .fade-in-up en index.css */
+}
+
+.serviceItem:hover {
+    transform: translateY(-10px); /* Solo el hover, la entrada es manejada por AnimatedSection */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.serviceImg {
+    width: 100%;
+    max-width: 150px; /* Ajusta según el tamaño deseado */
+    height: 100px; /* Altura fija para consistencia, usa object-fit */
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: var(--gris-claro); /* Fondo mientras carga la imagen */
+}
+
+.serviceItem h3 {
+    color: var(--azul-principal);
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.serviceItem p {
+    font-size: 0.95rem;
+    color: #555;
+}
