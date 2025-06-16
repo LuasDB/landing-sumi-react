@@ -4,6 +4,8 @@ import axios from 'axios'
 
 export default function FormQuote({isDeviceFound,device}){
 
+  const apiUrl = import.meta.env.VITE_API_URL;
+
     const [quoteForm, setQuoteForm] = useState({
     name: "",
     email: "",
@@ -34,8 +36,7 @@ export default function FormQuote({isDeviceFound,device}){
     const handleSubmit = async(e) => {
     e.preventDefault();
     try {
-      console.log('enviando a http://192.168.1.67:3000/api/v1/sumi/quote')
-      const { data } = await axios.post('http://localhost:3000/api/v1/sumi/quote',quoteForm)
+      const { data } = await axios.post('https://api-sumi-node-production.up.railway.app/api/v1/sumi/quote',quoteForm)
       console.log(data)
       if(data.success){
         alert(data.message)
