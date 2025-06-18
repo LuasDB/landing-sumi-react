@@ -52,25 +52,25 @@ export const footerData = {
   redesSociales: [
     {
       nombre: "LinkedIn",
-      url: "https://linkedin.com/company/siradiacion",
+      url: "https://linkedin.com/@sumi",
       icono: "linkedin",
       color: "hover:text-blue-600"
     },
     {
       nombre: "YouTube",
-      url: "https://youtube.com/@siradiacion",
+      url: "https://youtube.com/@sumi",
       icono: "youtube",
       color: "hover:text-red-600"
     },
     {
       nombre: "Facebook",
-      url: "https://facebook.com/siradiacion",
+      url: "https://facebook.com/sumi",
       icono: "facebook",
       color: "hover:text-blue-700"
     },
     {
       nombre: "Twitter",
-      url: "https://twitter.com/siradiacion",
+      url: "https://twitter.com/@sumi",
       icono: "twitter",
       color: "hover:text-blue-400"
     }
