@@ -3,9 +3,8 @@ import { Menu, X, Phone, MessageCircle, ChevronDown } from 'lucide-react';
 import Navigation from '@/components/Header/Navigation';
 import MobileMenu from '@/components/Header/MobileMenu';
 import ContactButtons from '@/components/Header/ContactButtons';
-import logo from '@/assets/images/logo.png'
 import styles from '@/components/Header/Header/Header.module.css'
-
+import Logo from '@/components/Logo';
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -57,14 +56,9 @@ const Header = () => {
             {/* Logo */}
             <div className="flex items-center space-x-3">
               <div className="flex-shrink-0">
-                <img 
-                  src={logo}
-                  alt="Laboratorio de Calibración" 
-                  className="h-10 lg:h-14 w-auto"
-                  onError={(e) => {
-                    e.target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='40' viewBox='0 0 120 40'%3E%3Crect width='120' height='40' fill='%231e40af'/%3E%3Ctext x='60' y='25' font-family='Arial' font-size='14' fill='white' text-anchor='middle'%3ELaboratorio%3C/text%3E%3C/svg%3E";
-                  }}
-                />
+                <Logo alt='Logo_Image' onError={(e) => {
+                e.target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='40' viewBox='0 0 120 40'%3E%3Crect width='120' height='40' fill='%231e40af'/%3E%3Ctext x='60' y='25' font-family='Arial' font-size='14' fill='white' text-anchor='middle'%3ELaboratorio%3C/text%3E%3C/svg%3E";
+                }} />
               </div>
               <div className="hidden sm:block">
                 {/* <div className="text-sm font-semibold text-gray-900">Laboratorio de Calibración</div>

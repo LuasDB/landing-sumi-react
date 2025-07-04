@@ -14,7 +14,7 @@ import SocialIcon from './SocialIcon';
 import NewsletterForm from './NewsletterForm';
 import AnimatedSection from '@/components/AnimatedSection';
 import { footerData, newsletterBeneficios } from '@/db/footerData';
-import logo from '@/assets/images/logo.png'
+import Logo from '../Logo';
 
 const Footer = () => {
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -66,10 +66,8 @@ const Footer = () => {
               <div className="space-y-6">
                 {/* Logo */}
                 <div>
-                  <img
-                    src={logo}
+                  <Logo
                     alt={footerData.empresa.nombreCorto}
-                    className="h-12 w-auto mb-4"
                     onError={(e) => handleImageError(e, 'logo')}
                   />
                   <h3 className="text-xl font-bold mb-2">{footerData.empresa.nombreCorto}</h3>

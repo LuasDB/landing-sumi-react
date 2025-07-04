@@ -16,7 +16,7 @@ export const footerData = {
     },
     telefono: "+52 (55) 1234-5678",
     whatsapp: "+52 55 1234 5678",
-    email: "info@siradiacion.com.mx",
+    email: "info@sumi.com.mx",
     horarios: "Lunes a Viernes: 8:00 - 18:00 hrs"
   },
 
