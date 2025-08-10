@@ -51,8 +51,8 @@ const SearchSection = () => {
   }
 
   const modalContent={
-    deviceSelected:<FormQuote isDeviceFound={true} device={selectedDevice}/>,
-    deviceNotFound:<FormQuote isDeviceFound={false} device={selectedDevice} />
+    deviceSelected:<FormQuote isDeviceFound={true} device={selectedDevice} onClose={handleModalOnClose}/>,
+    deviceNotFound:<FormQuote isDeviceFound={false} device={selectedDevice} onClose={handleModalOnClose}/>
   }
 
   return (

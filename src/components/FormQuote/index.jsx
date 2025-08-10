@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import axios from 'axios'
+import Swal from "sweetalert2";
 
 
-export default function FormQuote({isDeviceFound,device}){
+export default function FormQuote({isDeviceFound,device,onClose}){
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const apiUrl = import.meta.env.VITE_API_URL + '/api/v1/sumi/quote';
 
@@ -33,31 +35,24 @@ export default function FormQuote({isDeviceFound,device}){
     }));
   };
 
-    const handleSubmit = async(e) => {
-    e.preventDefault();
-    try {
-      const { data } = await axios.post(apiUrl,quoteForm)
-      console.log(data)
-      if(data.success){
-        alert(data.message)
-    //     setQuoteForm({
-    //   name: "",
-    //   email: "",
-    //   phone: "",
-    //   instrument: "",
-    //   magnitude: "",
-    //   details: ""
-    // });
-      }
-    } catch (error) {
-      alert(error.message)
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+  if (isSubmitting) return;
+  setIsSubmitting(true);
+  try {
+    const { data } = await axios.post(apiUrl, quoteForm);
+    if (data.success) {
+      Swal.fire('Solicitud enviada', 'Te enviaremos un correo. Nos pondremos en contacto contigo a la brevedad.', 'success')
+      onClose()
     }
-   
-    
-   
-  };
+  } catch (error) {
+    alert(error.message);
+  } finally {
+    setIsSubmitting(false);
+  }
+};
     return(
-        <form onSubmit={handleSubmit} className="space-y-6 bg-white dark:bg-gray-700 p-8 rounded-xl ">
+        <form  className="space-y-6 bg-white dark:bg-gray-700 p-8 rounded-xl ">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label className="block text-sm font-medium mb-2" htmlFor="name">
@@ -133,11 +128,13 @@ export default function FormQuote({isDeviceFound,device}){
             </div>
             <div className="flex justify-center">
               <button
-                type="submit"
-                className="cursor-pointer px-8 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl"
-              >
-                Enviar Información
-              </button>
+                  type="button"
+                  onClick={handleSubmit}
+                  disabled={isSubmitting}
+                  className="cursor-pointer px-8 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl disabled:opacity-60"
+                >
+                  {isSubmitting ? "Estamos enviando tu información..." : "Enviar Información"}
+                </button>
             </div>
           </form>
     )
