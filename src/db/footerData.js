@@ -30,7 +30,7 @@ export const footerData = {
   empresa_links: [
     { nombre: "Acerca de Nosotros", url: "#nosotros" },
     { nombre: "Acreditaciones", url: "#acreditaciones" },
-    { nombre: "Política de Calidad", url: "#calidad" },
+    { nombre: "Política de Calidad", url: "#politica-de-calidad" },
   ],
 
   recursos: [

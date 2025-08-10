@@ -77,7 +77,7 @@ const Footer = () => {
                 </div>
 
                 {/* Acreditaciones */}
-                <div>
+                {/* <div>
                   <h4 className="font-semibold mb-3 flex items-center">
                     <Shield className="w-4 h-4 mr-2" />
                     Acreditaciones
@@ -100,7 +100,7 @@ const Footer = () => {
                       </div>
                     ))}
                   </div>
-                </div>
+                </div> */}
 
                 {/* Redes sociales */}
                 <div>
@@ -161,7 +161,7 @@ const Footer = () => {
             <AnimatedSection delay={400} className="lg:col-span-1">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-8">
                 {/* Recursos */}
-                <div>
+                {/* <div>
                   <h4 className="font-semibold mb-4 text-lg">Recursos</h4>
                   <ul className="space-y-2">
                     {footerData.recursos.map((recurso, index) => (
@@ -178,7 +178,7 @@ const Footer = () => {
                       </li>
                     ))}
                   </ul>
-                </div>
+                </div> */}
 
                 {/* Legal */}
                 <div>
@@ -260,7 +260,7 @@ const Footer = () => {
                 </div>
 
                 {/* Newsletter */}
-                <NewsletterForm beneficios={newsletterBeneficios} />
+                {/* <NewsletterForm beneficios={newsletterBeneficios} /> */}
               </div>
             </AnimatedSection>
           </div>

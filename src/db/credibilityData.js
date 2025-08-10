@@ -32,11 +32,11 @@ export const estadisticas = [
   {
     numero: "500+",
     descripcion: "Equipos calibrados",
-    icono: "🔧",
+    icono: "⚖️",
     color: "text-blue-600"
   },
   {
-    numero: "15",
+    numero: `${parseInt(new Date().getFullYear()) - 2005}`,
     descripcion: "Años de experiencia",
     icono: "📅",
     color: "text-green-600"

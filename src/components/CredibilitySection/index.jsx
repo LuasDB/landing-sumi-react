@@ -1,20 +1,23 @@
-import { useState } from 'react';
-import AccreditationCard from '../AccreditationCard';
+import { useEffect, useState } from 'react';
 import StatCard from '../StatCard';
 import TestimonialCard from '../TestimonialCard';
 import GalleryCard from '../GalleryCard';
 import { 
-  acreditaciones, 
+  
   estadisticas, 
-  testimonios, 
-  galeriaEquipos, 
+  testimonios,  
   clientesDestacados 
 } from '@/db/credibilityData';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
+import axios from 'axios';
+
+
+
 
 const CredibilitySection = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
+  
 
   const handleImageClick = (equipo) => {
     setSelectedImage(equipo);
@@ -33,51 +36,16 @@ const CredibilitySection = () => {
   };
 
   return (
-    <section id="nosotros" className="py-16 lg:py-24 bg-gradient-to-b from-blue-100 via-green-50 to-green-100">
+    <section  >
+      
       <div className="container mx-auto px-4">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Confianza y Experiencia Comprobada
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto mt-4">
-          Para <span className='font-bold'>Suministros de Importación,S.A. de C.V.</span> , nuestro compromiso es garantizar la confiabilidad de las mediciones de nuestros clientes, ofreciendo soluciones técnicas precisas, tiempos de entrega competitivos y atención personalizada. Contamos con personal altamente capacitado y equipos de referencia trazables a patrones nacionales e internacionales, lo que nos permite asegurar resultados técnicamente válidos en cada servicio de calibración.
-        </p>
-
-        </div>
+        {/* About */}
+        
 
         {/* Estadísticas */}
-        <div className="mb-20">
-          <h3 className="text-3xl font-bold text-gray-900 text-center mb-12">
-            Números que nos respaldan
-          </h3>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-            {estadisticas.map((stat, index) => (
-              <StatCard 
-                key={stat.descripcion} 
-                stat={stat} 
-                delay={index * 200}
-              />
-            ))}
-          </div>
-        </div>
+        
 
        
-        <section className="pt-[80px] py-12 " id="acreditaciones">
-          <div className="mb-20 " >
-          <h3 className="text-3xl font-bold text-gray-900 text-center mb-12">
-            Acreditaciones y Certificaciones
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {acreditaciones.map((acreditacion) => (
-              <AccreditationCard 
-                key={acreditacion.id} 
-                acreditacion={acreditacion} 
-              />
-            ))}
-          </div>
-        </div>
-        </section>
        
 
         
