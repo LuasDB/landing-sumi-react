@@ -2,11 +2,10 @@ import { useEffect, useState } from 'react'
 import AccreditationCard from '@/components/AccreditationCard'
 import axios from 'axios'
 
-const useGetAccreditations =()=>{
 
+export default function Accreditations(){
   const [acreditaciones,setAcreditaciones] = useState([])
-
-  const getAcreditaciones = async ()=>{
+   const getAcreditaciones = async ()=>{
     try {
       const { data } = await axios.get(`${import.meta.env.VITE_API_URL}/api/v1/sumi`)
       if(data.success){
@@ -17,16 +16,10 @@ const useGetAccreditations =()=>{
       console.error(error)
     }
   }
-
-   useEffect(() => {
+  useEffect(() => {
     getAcreditaciones();
   }, []);
-
-
-  return {acreditaciones}
-}
-export default function Accreditations(){
-    const { acreditaciones } = useGetAccreditations()
+    
 
     return(
         <section className="pt-[80px] py-12 " id="acreditaciones">
