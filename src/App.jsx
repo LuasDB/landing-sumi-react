@@ -10,7 +10,7 @@ function App() {
   return (
     <Routes>
       <Route path='/' element={<Landing />} />
-      <Route path='*/administrador' element={<Admin />} />
+      <Route path='/administrador' element={<Admin />} />
     </Routes>
   );
 }
