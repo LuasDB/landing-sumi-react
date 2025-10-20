@@ -45,7 +45,7 @@ export default function About() {
             className="text-center mb-2">
                 <AddedValue />
                 <Estadistics />
-                <QualityPolicy />
+                
             </motion.div>
             
         </section>

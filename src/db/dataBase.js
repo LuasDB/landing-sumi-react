@@ -127,18 +127,16 @@ export const equipmentDatabase = [
 ];
 
 export const marcasPopulares = [
-  { nombre: "Fluke", logo: "/logos/fluke.png", equipos: 4 },
-  { nombre: "Keysight", logo: "/logos/keysight.png", equipos: 1 },
-  { nombre: "Mitutoyo", logo: "/logos/mitutoyo.png", equipos: 1 },
-  { nombre: "Ohaus", logo: "/logos/ohaus.png", equipos: 1 },
-  { nombre: "Mettler Toledo", logo: "/logos/mettler.png", equipos: 1 },
-  { nombre: "Starrett", logo: "/logos/starrett.png", equipos: 1 },
-  { nombre: "Omega", logo: "/logos/omega.png", equipos: 1 }
+  // { nombre: "Fluke", logo: "/logos/fluke.png", equipos: 4 },
+  // { nombre: "Keysight", logo: "/logos/keysight.png", equipos: 1 },
+  // { nombre: "Mitutoyo", logo: "/logos/mitutoyo.png", equipos: 1 },
+  // { nombre: "Ohaus", logo: "/logos/ohaus.png", equipos: 1 },
+  // { nombre: "Mettler Toledo", logo: "/logos/mettler.png", equipos: 1 },
+  // { nombre: "Starrett", logo: "/logos/starrett.png", equipos: 1 },
+  // { nombre: "Omega", logo: "/logos/omega.png", equipos: 1 }
 ];
 
 export const categorias = [
-  { nombre: "Eléctrico", icono: "⚡", equipos: 3, color: "bg-yellow-100 text-yellow-800" },
-  { nombre: "Dimensional", icono: "📏", equipos: 2, color: "bg-blue-100 text-blue-800" },
   { nombre: "Masa", icono: "⚖️", equipos: 2, color: "bg-green-100 text-green-800" },
   { nombre: "Temperatura", icono: "🌡️", equipos: 2, color: "bg-red-100 text-red-800" },
   { nombre: "Presión", icono: "🔧", equipos: 1, color: "bg-purple-100 text-purple-800" }

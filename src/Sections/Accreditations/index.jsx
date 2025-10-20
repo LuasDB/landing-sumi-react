@@ -25,7 +25,7 @@ export default function Accreditations(){
         <section className="pt-[80px] py-12 " id="acreditaciones">
             <div className="mb-20 " >
             <h3 className="text-3xl font-bold text-green-900 text-center mb-12">
-            Acreditaciones y Certificaciones
+            Acreditaciones
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {acreditaciones.map((acreditacion) => (

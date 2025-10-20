@@ -12,12 +12,7 @@ const SearchBar = ({ onResults, onSearchChange }) => {
 
   // Sugerencias populares
   const popularSearches = [
-    "Fluke 87V",
-    "Multímetro",
-    "Balanza analítica",
-    "Calibrador vernier",
-    "Termómetro digital",
-    "Keysight 34461A"
+    
   ];
 
   useEffect(() => {

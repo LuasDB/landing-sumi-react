@@ -13,6 +13,7 @@ import About from '@/Sections/About';
 import AddedValue from '@/Sections/AddedValue';
 import Accreditations from '@/Sections/Accreditations';
 import Accreditations2 from '@/Sections/Accreditations2';
+import QualityPolicy from '@/Sections/QualityPolicy';
 
 export default function Landing(){
     return (
@@ -23,11 +24,11 @@ export default function Landing(){
         <Hero backgroundImage={ImageHero}/>
         <div className="bg-gradient-to-b from-blue-100 via-white to-blue-300">
         <About className=""/>
+        <QualityPolicy />
         <Accreditations />|
         <SearchDevices />
 
-        
-
+    
         </div>
 
         {/* <SliderCarousel  /> */}

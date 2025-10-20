@@ -31,16 +31,8 @@ const sampleItemsIcons = [
         description: 'Mantenimiento preventivo y correctivo de equipos de medición y laboratorio, asegurando un funcionamiento óptimo, reducción de fallos y mayor vida útil.', 
         icon: 'Wrench' 
     },
-    { 
-        title: 'Capacitación', 
-        description: 'Programas de capacitación técnica y certificada en metrología, manejo de equipos, análisis de resultados y cumplimiento normativo, diseñados para potenciar el rendimiento de su personal.', 
-        icon: 'BookOpen' 
-    },
-    { 
-        title: 'Asesoría Profesional', 
-        description: 'Consultoría experta en metrología, acreditaciones, calidad y normatividad, respaldada por más de 20 años de experiencia en el sector.', 
-        icon: 'Handshake' 
-    },
+  
+   
     { 
         title: 'Personal Capacitado', 
         description: 'Contamos con un equipo altamente calificado y certificado, preparado para ofrecer soluciones precisas y confiables en cada proyecto que desarrollamos.', 
