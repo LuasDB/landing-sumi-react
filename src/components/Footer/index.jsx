@@ -103,14 +103,15 @@ const Footer = () => {
                 </div> */}
 
                 {/* Redes sociales */}
-                <div>
+                {/* <div>
                   <h4 className="font-semibold mb-3">Síguenos</h4>
                   <div className="flex space-x-3">
                     {footerData.redesSociales.map((social, index) => (
                       <SocialIcon key={social.nombre} social={social} index={index} />
                     ))}
                   </div>
-                </div>
+                </div> */}
+              
               </div>
             </AnimatedSection>
 
@@ -136,24 +137,7 @@ const Footer = () => {
                   </ul>
                 </div>
 
-                {/* Empresa */}
-                <div>
-                  <h4 className="font-semibold mb-4 text-lg">Empresa</h4>
-                  <ul className="space-y-2">
-                    {footerData.empresa_links.map((link, index) => (
-                      <li key={index}>
-                        <a
-                          href={link.url}
-                          className="text-gray-300 hover:text-white transition-colors duration-200 text-sm flex items-center group"
-                        >
-                          <span className="group-hover:translate-x-1 transition-transform duration-200">
-                            {link.nombre}
-                          </span>
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                
               </div>
             </AnimatedSection>
 
@@ -181,7 +165,7 @@ const Footer = () => {
                 </div> */}
 
                 {/* Legal */}
-                <div>
+                {/* <div>
                   <h4 className="font-semibold mb-4 text-lg">Legal</h4>
                   <ul className="space-y-2">
                     {footerData.legal.map((legal, index) => (
@@ -197,7 +181,27 @@ const Footer = () => {
                       </li>
                     ))}
                   </ul>
+                </div> */}
+                {/* Empresa */}
+                <div>
+                  <h4 className="font-semibold mb-4 text-lg">Empresa</h4>
+                  <ul className="space-y-2">
+                    {footerData.empresa_links.map((link, index) => (
+                      <li key={index}>
+                        <a
+                          href={link.url}
+                          className="text-gray-300 hover:text-white transition-colors duration-200 text-sm flex items-center group"
+                        >
+                          <span className="group-hover:translate-x-1 transition-transform duration-200">
+                            {link.nombre}
+                          </span>
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
+
+
               </div>
             </AnimatedSection>
 

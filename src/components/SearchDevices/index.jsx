@@ -56,15 +56,15 @@ const SearchSection = () => {
   }
 
   return (
-    <section id="cotizar" className="py-16 lg:py-24 bg-gradient-to-b from-blue-200 via-white to-green-100">
+    <section id="cotizar" className="py-16 lg:py-24 h-screen">
       <Modal open={modalOpen} onClose={handleModalOnClose} modalContent={modalContent[selectedModalContent]} />
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold text-[#304c7d] mb-6">
             ¿Necesitas calibrar tu equipo?
           </h2>
-          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl text-[#304c7d] mb-8 max-w-3xl mx-auto">
             Descubre en 30 segundos si calibramos tu equipo.
           </p>
           
@@ -128,7 +128,7 @@ const SearchSection = () => {
 
 
         {/* Categorías */}
-        {!hasSearched && (
+        {/* {!hasSearched && (
           <div>
             <h3 className="text-2xl font-bold text-gray-900 text-center mb-8">
               Busca por categoría
@@ -150,7 +150,7 @@ const SearchSection = () => {
               ))}
             </div>
           </div>
-        )}
+        )} */}
       </div>
     </section>
   );

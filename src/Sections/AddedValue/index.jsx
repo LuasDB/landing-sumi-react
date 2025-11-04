@@ -22,9 +22,9 @@ const sampleItemsIcons = [
         icon: 'Medal' 
     },
     { 
-        title: 'Acreditación Perry Johnson', 
-        description: 'Contamos con acreditación internacional por Perry Johnson, lo que respalda nuestro compromiso con los más altos estándares de calidad a nivel global.', 
-        icon: 'Award' 
+        title: 'Calificaciones IQ / OQ / PQ', 
+        description: 'Ofrecemos la calificación de equipos bajo los lineamientos nacionales y de la FDA (Food and Drug Administration), asegurando el cumplimiento en instalación, operación y desempeño como parte de nuestro valor agregado en calidad y validación de procesos.', 
+        icon: 'ClipboardCheck' 
     },
     { 
         title: 'Mantenimientos', 
@@ -38,6 +38,7 @@ const sampleItemsIcons = [
         description: 'Contamos con un equipo altamente calificado y certificado, preparado para ofrecer soluciones precisas y confiables en cada proyecto que desarrollamos.', 
         icon: 'UserCheck' 
     },
+
 ]
 
 

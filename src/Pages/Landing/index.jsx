@@ -22,7 +22,7 @@ export default function Landing(){
       <main className="pt-0 lg:pt-0  h-screen">
 
         <Hero backgroundImage={ImageHero}/>
-        <div className="bg-gradient-to-b from-blue-100 via-white to-blue-300">
+        <div className="bg-gradient-to-b from-green-100 via-white to-green-200">
         <About className=""/>
         <QualityPolicy />
         <Accreditations />|

@@ -8,15 +8,15 @@ export const footerData = {
   
   contacto: {
     direccion: {
-      calle: "Av. Tecnológico #123",
-      colonia: "Col. Industrial",
-      ciudad: "Ciudad de México",
-      cp: "01234",
+      calle: "Convento de Corpus Christi 21C",
+      colonia: "Col. Jardines de Santa Monica",
+      ciudad: "Tlalnepantla de Baz, Edo. de México",
+      cp: "54050",
       pais: "México"
     },
-    telefono: "+52 (55) 1234-5678",
-    whatsapp: "+52 55 1234 5678",
-    email: "info@sumi.com.mx",
+    telefono: "+52 (55) 5236 3105",
+    whatsapp: "+52 (55) 5236 3105",
+    email: "contacto@sumi.mx",
     horarios: "Lunes a Viernes: 8:00 - 18:00 hrs"
   },
 

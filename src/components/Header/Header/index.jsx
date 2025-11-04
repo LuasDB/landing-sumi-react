@@ -5,6 +5,8 @@ import MobileMenu from '@/components/Header/MobileMenu';
 import ContactButtons from '@/components/Header/ContactButtons';
 import styles from '@/components/Header/Header/Header.module.css'
 import Logo from '@/components/Logo';
+import logo from '@/assets/images/Mesa de trabajo 4@300x.png'
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -46,19 +48,24 @@ const Header = () => {
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled 
             ? `' bg-white/30 backdrop-blur-md border-b border-white/20 shadow-sm' `
-            : `bg-white `
+            : ` bg-white/30 backdrop-blur-md border-b border-white/20 shadow-sm`
         }`}
       >
         
         
         <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between h-16 lg:h-20">
+          <div className="flex items-center justify-between h-16 lg:h-14">
             {/* Logo */}
             <div className="flex items-center space-x-3">
               <div className="flex-shrink-0">
-                <Logo alt='Logo_Image' onError={(e) => {
+                {/* <Logo alt='Logo_Image' onError={(e) => {
                 e.target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='40' viewBox='0 0 120 40'%3E%3Crect width='120' height='40' fill='%231e40af'/%3E%3Ctext x='60' y='25' font-family='Arial' font-size='14' fill='white' text-anchor='middle'%3ELaboratorio%3C/text%3E%3C/svg%3E";
-                }} />
+                }} /> */}
+                <img 
+                    src={logo}
+                    alt={'Logo empresa'}
+                    className={`'h-14 lg:h-14 w-auto' hidden lg:block`}
+                />
               </div>
               <div className="hidden sm:block">
                 {/* <div className="text-sm font-semibold text-gray-900">Laboratorio de Calibración</div>
@@ -85,7 +92,7 @@ const Header = () => {
             <div className="flex md:hidden items-center space-x-2">
               {/* WhatsApp button mobile */}
               <a 
-                href="https://wa.me/5551234567" 
+                href="https://wa.me/+525552363105" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-2 text-secondary-600 hover:text-secondary-700 transition-colors"

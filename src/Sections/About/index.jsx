@@ -42,9 +42,9 @@ export default function About() {
             initial={{  opacity: 0,y:50 }}    // Empieza pequeño y transparente
             animate={isInView2 ? { opacity: 1,y:0 }:{}}    // Termina en tamaño normal y opaco
             transition={{ duration: 1.5, ease: 'easeOut'}} // Duración y suavidad
-            className="text-center mb-2">
+            className="text-center mb-2 mt-38 lg:mt-0">
                 <AddedValue />
-                <Estadistics />
+                {/* <Estadistics /> */}
                 
             </motion.div>
             

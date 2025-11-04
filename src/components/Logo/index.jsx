@@ -1,4 +1,4 @@
-import logo from '@/assets/images/logo.png'
+import logo from '@/assets/images/Mesa de trabajo 3@300x.png'
 
 export default function Logo({alt, onError, className}) {
     onError = (e) => {

@@ -87,16 +87,16 @@ const MobileMenu = ({ isOpen, onClose }) => {
             <h3 className="font-semibold text-gray-900">Contacto</h3>
             
             <a 
-              href="tel:+5551234567" 
+              href="tel:+525552363105" 
               className="flex items-center space-x-3 text-gray-600 hover:text-primary-600 transition-colors"
               onClick={handleLinkClick}
             >
               <Phone className="h-5 w-5" />
-              <span>(555) 123-4567</span>
+              <span>+52(55)52363105</span>
             </a>
 
             <a 
-              href="https://wa.me/5551234567" 
+              href="https://wa.me/+525552363105" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center space-x-3 text-secondary-600 hover:text-secondary-700 transition-colors"
@@ -112,7 +112,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
               onClick={handleLinkClick}
             >
               <Mail className="h-5 w-5" />
-              <span>info@laboratorio.com</span>
+              <span>contacto@sumi.mx</span>
             </a>
           </div>
 

@@ -6,7 +6,7 @@ const ContactButtons = () => {
      
       {/* WhatsApp */}
       <a 
-        href="https://wa.me/5551234567" 
+        href="https://wa.me/+525552363105" 
         target="_blank" 
         rel="noopener noreferrer"
         className="flex items-center space-x-2 text-secondary-600 hover:text-secondary-700 transition-colors group"
@@ -17,11 +17,11 @@ const ContactButtons = () => {
 
        {/* Teléfono */}
       <a 
-        href="tel:+5551234567" 
+        href="tel:+525552363105" 
         className="flex items-center space-x-2 text-gray-600 hover:text-primary-600 transition-colors group"
       >
         <Phone className="h-4 w-4 group-hover:scale-110 transition-transform" />
-        <span className="text-sm font-medium hidden lg:block">(555) 123-4567</span>
+        <span className="text-sm font-medium hidden lg:block">(55) 5236 3105</span>
       </a>
 
 
